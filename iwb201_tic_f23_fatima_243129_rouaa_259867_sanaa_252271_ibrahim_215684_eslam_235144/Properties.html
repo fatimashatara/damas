@@ -1,0 +1,308 @@
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW IWB201</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>العقارات </h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">الصفحة الرئيسية</a></li>
+                <li><a href="AboutUs.html">من نحن</a></li>
+                <li><a href="Properties.html">  العقارات</a></li>
+                <li><a href="form.html">نموذج التسجيل</a></li>
+            </ul>
+        </nav>
+    </header>
+        <section class="my-table">
+            <div class="continer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>المدينة</th>
+                            <th>التفاصيل</th>
+                            <th>الايجار الشهري</th>
+                            <th>اظهار التفاصيل</th>
+                            <th>الاختيار</th>
+                        </tr>
+                    </thead>
+                    <tbody id="flats">
+                    </tbody>
+                    <tr>
+                        <td>دمشق</td>
+                        <td>مساحة 160م</td>
+                        <td>700000</td>
+                        <td><input type="checkbox" onclick="toggleDetails(this)"></td>
+                        <td><input type="radio"></td>
+                        
+                    </tr>
+                    <tr class="hid">
+                        <td colspan="5">
+                            <div class="info">
+                                <ul class="text">
+                                    <li>المنطقة : ركن الدين</li>
+                                    <li> متوفر كراج : نعم</li>
+                                    <li>الطابق: الاول</li>
+                                    <li>الملكية : طابو</li>
+                                    <li>مساحة البلكون:25م</li>
+                                    <li> مفروشة: نعم</li>
+                                </ul>
+                                <div class="imags">
+                                    <img src="./imags/شقة اولى 2.jpg" alt="">
+                                    <img src="./imags/شقة اولى 1.jpg" alt="">
+                                    <img src="./imags/شقة اولى 3.jpg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>حماة</td>
+                        <td>مساحة 200م</td>
+                        <td>1200000</td>
+                        <td><input type="checkbox" onclick="toggleDetails(this)"></td>
+                        <td><input type="radio"></td>
+                    </tr>
+                    <tr class="hid">
+                        <td colspan="5">
+                            <div class="info">
+                                <ul class="text">
+                                    <li>المنطقة : القصور </li>
+                                    <li> متوفر كراج : لا</li>
+                                    <li>الطابق: الثالث</li>
+                                    <li>الملكية : طابو</li>
+                                    <li>مساحة البلكون:25م</li>
+                                    <li> مفروشة: نعم</li>
+                                </ul>
+                                <div class="imags">
+                                    <img src="./imags/شقة ثانية1.jpg" alt="">
+                                    <img src="./imags/شقة ثانية3.jpg" alt="">
+                                    <img src="./imags/شقة ثانية 2.jpg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>حلب</td>
+                        <td>مساحة 100م</td>
+                        <td>500000</td>
+                        <td><input type="checkbox" onclick="toggleDetails(this)"></td>
+                        <td><input type="radio"></td>
+                    </tr>
+                    <tr class="hid">
+                        <td colspan="5">
+                            <div class="info">
+                                <ul class="text">
+                                    <li>المنطقة : جرابلس </li>
+                                    <li> متوفر كراج : لا</li>
+                                    <li>الطابق: الرابع</li>
+                                    <li>الملكية : طابو</li>
+                                    <li>مساحة البلكون:15م</li>
+                                    <li> مفروشة: نعم</li>
+                                </ul>
+                                <div class="imags">
+                                    <img src="./imags/شقة ثالثة 1.jpg" alt="">
+                                    <img src="./imags/شقة ثالثة 3.jpg" alt="">
+                                    <img src="./imags/شقة ثالثة2.jpg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>حمص</td>
+                        <td>مساحة 120م</td>
+                        <td>1000000</td>
+                        <td><input type="checkbox" onclick="toggleDetails(this)"></td>
+                        <td><input type="radio"></td>
+                    </tr>
+                    <tr class="hid">
+                        <td colspan="5">
+                            <div class="info">
+                                <ul class="text">
+                                    <li>المنطقة : الخالدية </li>
+                                    <li> متوفر كراج : نعم</li>
+                                    <li>الطابق: الثاني</li>
+                                    <li>الملكية : طابو</li>
+                                    <li>مساحة البلكون:20م</li>
+                                    <li> مفروشة: نعم</li>
+                                </ul>
+                                <div class="imags">
+                                    <img src="./imags/شقة رابعة 1.jpg" alt="">
+                                    <img src="./imags/شقة رابعة 2.jpg" alt="">
+                                    <img src="./imags/شقة رابعة 3.jpg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>حمص</td>
+                        <td>مساحة 90م</td>
+                        <td>500000</td>
+                        <td><input type="checkbox" onclick="toggleDetails(this)"></td>
+                        <td><input type="radio"></td>
+                    </tr>
+                    <tr class="hid">
+                        <td colspan="5">
+                            <div class="info">
+                                <ul class="text">
+                                    <li>المنطقة : الميدان </li>
+                                    <li> متوفر كراج : نعم</li>
+                                    <li>الطابق: ارضي</li>
+                                    <li>الملكية : طابو</li>
+                                    <li>مساحة البلكون:15م</li>
+                                    <li> مفروشة: نعم</li>
+                                </ul>
+                                <div class="imags">
+                                    <img src="./imags/شقة خامسة 1.jpg" alt="">
+                                    <img src="./imags/شقة خامسة 3.jpg" alt="">
+                                    <img src="./imags/شقة خامسة 2.jpg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>اللاذقية</td>
+                        <td>مساحة 200م</td>
+                        <td>1500000</td>
+                        <td><input type="checkbox" onclick="toggleDetails(this)"></td>
+                        <td><input type="radio"></td>
+                    </tr>
+                    <tr class="hid">
+                        <td colspan="5">
+                            <div class="info">
+                                <ul class="text">
+                                    <li>المنطقة : تشرين </li>
+                                    <li> متوفر كراج : لا</li>
+                                    <li>الطابق: الثالث</li>
+                                    <li>الملكية : طابو</li>
+                                    <li>مساحة البلكون:25م</li>
+                                    <li> مفروشة: نعم</li>
+                                </ul>
+                                <div class="imags">
+                                    <img src="./imags/شقة سادسة 2.jpg" alt="">
+                                    <img src="./imags/شقة سادسة 1.jpg" alt="">
+                                    <img src="./imags/شقة سادسة 3.jpg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>حماة</td>
+                        <td>مساحة 100م</td>
+                        <td>750000</td>
+                        <td><input type="checkbox" onclick="toggleDetails(this)"></td>
+                        <td><input type="radio"></td>
+                    </tr>
+                    <tr class="hid">
+                        <td colspan="5">
+                            <div class="info">
+                                <ul class="text">
+                                    <li>المنطقة : الاربعين </li>
+                                    <li> متوفر كراج : لا</li>
+                                    <li>الطابق: قبو</li>
+                                    <li>الملكية : طابو</li>
+                                    <li>مساحة البلكون:لا يوجد</li>
+                                    <li> مفروشة: نعم</li>
+                                </ul>
+                                <div class="imags">
+                                    <img src="./imags/شقة سابعة 1.jpg" alt="">
+                                    <img src="./imags/شقة سابعة 3.jpg" alt="">
+                                    <img src="./imags/شقة سابعة 2.jpg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>دمشق</td>
+                        <td>مساحة 150م</td>
+                        <td>2000000</td>
+                        <td><input type="checkbox" onclick="toggleDetails(this)"></td>
+                        <td><input type="radio"></td>
+                    </tr>
+                    <tr class="hid">
+                        <td colspan="5">
+                            <div class="info">
+                                <ul class="text">
+                                    <li>المنطقة : ابو رمانة </li>
+                                    <li> متوفر كراج : لا</li>
+                                    <li>الطابق: الاول</li>
+                                    <li>الملكية : طابو</li>
+                                    <li>مساحة البلكون: 30م </li>
+                                    <li> مفروشة: نعم</li>
+                                </ul>
+                                <div class="imags">
+                                    <img src="./imags/شقة ثامنة 1.jpg" alt="">
+                                    <img src="./imags/شقة ثامنة2.jpg " alt="">
+                                    <img src="./imags/شقة ثامنة3.jpg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>طرطوس</td>
+                        <td>مساحة 120م</td>
+                        <td>1000000</td>
+                        <td><input type="checkbox" onclick="toggleDetails(this)"></td>
+                        <td><input type="radio"></td>
+                    </tr>
+                    <tr class="hid">
+                        <td colspan="5">
+                            <div class="info">
+                                <ul class="text">
+                                    <li>المنطقة : بيت كمونة </li>
+                                    <li> متوفر كراج : نعم</li>
+                                    <li>الطابق: الثاني</li>
+                                    <li>الملكية : طابو</li>
+                                    <li>مساحة البلكون: 20م </li>
+                                    <li> مفروشة: نعم</li>
+                                </ul>
+                                <div class="imags">
+                                    <img src="./imags/شقة تاسعة 1.jpg" alt="">
+                                    <img src="./imags/شقة تاسعة 3.jpg" alt="">
+                                    <img src="./imags/شقة تاسعة 2.jpg " alt="">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>حماة</td>
+                        <td>مساحة 220م</td>
+                        <td>3000000</td>
+                        <td><input type="checkbox" onclick="toggleDetails(this)"></td>
+                        <td><input type="radio"></td>
+                    </tr>
+                    <tr class="hid">
+                        <td colspan="5">
+                            <div class="info">
+                                <ul class="text">
+                                    <li>المنطقة : الشريعة </li>
+                                    <li> متوفر كراج : نعم</li>
+                                    <li>الطابق: الثاني</li>
+                                    <li>الملكية : طابو</li>
+                                    <li>مساحة البلكون: 50م </li>
+                                    <li> مفروشة: نعم</li>
+                                </ul>
+                                <div class="imags">
+                                    <img src="./imags/شقة عاشرة 1.jpg" alt="">
+                                    <img src="./imags/شقة عاشرة 2.jpg" alt="">
+                                    <img src="./imags/شقة عاشرة 3.jpg " alt="">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <footer>
+                    <a href="form.html" class="continue-button">متابعة</a>
+                </footer>
+                    
+                </button>
+            </div>
+        </section>
+            </tbody>
+    </table>
+    <script src="myFunctions.js">
+    </script>
+</body>
+</html>

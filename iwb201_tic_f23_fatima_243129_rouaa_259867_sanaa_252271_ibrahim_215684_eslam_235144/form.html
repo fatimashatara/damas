@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>نموذج التسجيل</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('registrationForm').addEventListener('submit', function(event) {
+                const fields = {
+                    fullName: document.getElementById('fullName').value.trim(),
+                    nationalID: document.getElementById('nationalID').value.trim(),
+                    dob: document.getElementById('dob').value,
+                    mobile: document.getElementById('mobile').value.trim(),
+                    email: document.getElementById('email').value.trim(),
+                    captcha: document.getElementById('captcha').value.trim()
+                };
+
+                let errorMessage = '';
+
+                if (!fields.fullName) errorMessage += 'يرجى إدخال الاسم الكامل.\n';
+                if (!/^\d{11}$/.test(fields.nationalID)) errorMessage += 'يرجى إدخال رقم وطني صحيح مكون من 11 رقم.\n';
+                if (!fields.dob) errorMessage += 'يرجى إدخال تاريخ الولادة.\n';
+                if (!/^09[1|4]\d{7}$/.test(fields.mobile)) errorMessage += 'يرجى إدخال رقم موبايل صحيح (يبدأ بـ 09 أو 09 ويليه 7 أرقام).\n';
+                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fields.email)) errorMessage += 'يرجى إدخال بريد إلكتروني صحيح.\n';
+                if (!fields.captcha) errorMessage +=' يرجا ادخال رمز التحقق.\n';
+
+                if (errorMessage) {
+                    alert(errorMessage);
+                    event.preventDefault();
+                } else {
+                    event.preventDefault();
+                    alert('تم التحقق بنجاح!\nمعلومات العقار الذي تم اختياره:\n- العنوان: شارع الملكة، المدينة\n- السعر: 500,000 دولار\n- المساحة: 200 متر مربع');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>أسماء الطلاب</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">الصفحة الرئيسية</a></li>
+                <li><a href="AboutUs.html">من نحن</a></li>
+                <li><a href="Properties.html">  العقارات</a></li>
+                <li><a href="form.html">نموذج التسجيل</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form id="registrationForm">
+        <label for="fullName">الاسم الكامل:</label>
+        <input type="text" id="fullName" name="fullName"><br><br>
+
+        <label for="nationalID">الرقم الوطني:</label>
+        <input type="text" id="nationalID" name="nationalID"><br><br>
+
+        <label for="dob">تاريخ الولادة:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="mobile">رقم الموبايل:</label>
+        <input type="text" id="mobile" name="mobile"><br><br>
+
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="captcha">رمز التحقق:</label>
+        <input type="text" id="captcha" name="captcha"><br><br>
+
+        <button type="submit">إرسال</button>
+    </form>
+</body>
+</html>
